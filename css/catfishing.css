@@ -53,3 +53,14 @@ header nav img{
     height: 100%;
     width: 80%;
 }
+
+main img{
+    border: solid black 1px;
+    width: 1198px;
+}
+p{
+    font-size: 22px;
+}
+h1 {
+    font-size: 50px;
+}
