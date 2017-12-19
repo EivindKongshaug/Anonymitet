@@ -153,6 +153,14 @@ main a article{
 
 }
 
+p{
+    font-size: 20px;
+    max-width: 1000px;
+}
+h1{
+    font-size: 50px;
+}
+
 @media(max-width: 1000px) {
     .hoved{grid-column:span 12;
     }
