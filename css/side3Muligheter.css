@@ -57,18 +57,18 @@ header nav img{
 
 
 
-main {
+.main {
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-row: repeat(4,1fr);
     max-width: 100vw;
-    min-height: 90vh;
+    height: 90vh;
 
 
 
 }
 
-main a {
+.main a {
     border: black inset 2px;
 
 }
@@ -86,9 +86,9 @@ main a {
 }
 
 .høyre1{
-    background-color: #eae3ea;
+    background-color: #b56357;
     grid-column: span 4;
-    background-image: url("../Bilder/ny/protecting-data-and-privacy-in-the-cloud.png");
+    background-image: url("../Bilder/ny/Media.png" );
     background-position: right bottom;
     background-size: 50%;
     background-repeat: no-repeat;
@@ -99,7 +99,7 @@ main a {
 .høyre2{
     background-color: #b4dbc0;
     grid-column: span 4;
-    background-image: url( "../Bilder/ny/Cyber-bullying-word-art2.png");
+    background-image: url("../Bilder/ny/Cyber-bullying-word-art2.png");
     background-position: right bottom;
     background-size: 50%;
     background-repeat: no-repeat;
@@ -108,9 +108,9 @@ main a {
 }
 
 .høyre3{
-    background-color: #b56357;
+    background-color: #eae3ea;
     grid-column: span 4;
-    background-image: url("../Bilder/ny/Media.png");
+    background-image: url("../Bilder/ny/protecting-data-and-privacy-in-the-cloud.png");
     background-position: right bottom;
     background-size: 50%;
     background-repeat: no-repeat;
@@ -124,23 +124,23 @@ main a {
 .høyre4{
     background-color: #a7b3a5;
     grid-column: span 4;
-    background-image: url("../Bilder/ny/Capture.png");
+    background-image: url("../Bilder/ny/Capture.png" );
     background-position: right bottom;
     background-size: 50%;
     background-repeat: no-repeat;
     color: transparent;
     text-shadow: 0 0 5px rgba(0,0,0,0.5);
-
 }
 
-main img{
+
+.main img{
     width:80%;
     opacity: 0.3;
     margin-top: 15vw;
     margin-left: 15vw;
 }
 
-main a article{
+.main a article{
     text-decoration: none;
     color: white;
     font-size: 40px;
@@ -164,17 +164,36 @@ h1{
 
 @media(max-width: 1000px) {
     .hoved{grid-column:span 12;
+        margin: 0;
     }
     .høyre1{grid-column: span 6;
-        height: 100px}
+        height: 150px;
+        margin: 0;}
     .høyre2{grid-column: span 6;
-        height: 100px}
+        height: 150px;
+        margin: 0;
+    }
     .høyre3{grid-column: span 6;
-        height:100px;}
+        height:150px;
+        margin: 0;}
     .høyre4{grid-column: span 6;
-        height: 100px}
+        height: 150px;
+        margin: 0;}
+    header nav a{
+        font-size: 20px;
+    }
+    .main a article{
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 875x) {
+    header nav a{
+        font-size: 15px;
+    }
 
 }
+
 
 @media (max-width: 500px) {
     .hoved{grid-column:span 12;
@@ -187,4 +206,7 @@ h1{
         height: 100px}
     .høyre4{grid-column: span 12;
         height: 100px}
+    header nav a{
+        font-size: 15px;
+    }
 }
